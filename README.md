@@ -35,7 +35,7 @@ In your html include the element.
 
 Add the element to your HTML defining the `appId`.
 
-    <cast-video appId="ABCDEF"></cast-video>
+    <cast-video appId="{{ appId }}"></cast-video>
     
 In the polymer ready event pass in the castManager object.
 
