@@ -18,6 +18,6 @@
     "polymer": "Polymer/polymer#~0.5.5",
     "core-signals": "Polymer/core-signals#~0.5.5",
     "paper-spinner": "Polymer/paper-spinner#~0.5.5",
-    "cast-player-bar-polymer": "googlecast/cast-player-bar-polymer#~1.0.2"
+    "cast-player-bar-polymer": "googlecast/cast-player-bar-polymer#~1.0.0"
   }
 }
