@@ -17,7 +17,8 @@ This element represents the video player in the [castvideos-material](https://gi
 
 [Demo](http://googlecast.github.io/cast-video-polymer/demo.html)
 
-It observes castManager `localMedia` and automatically loads any HTML5 video that's set as localMedia.
+It observes `castManager.localMedia` and automatically loads any HTML5 video that's set as 
+localMedia.
 
 It encapsulates the [cast-player-bar](https://github.com/googlecast/cast-player-bar-polymer) element to handle controlling local media and casting.
 
