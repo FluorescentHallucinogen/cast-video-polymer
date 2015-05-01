@@ -38,12 +38,7 @@ In your html include the element.
 Add the element to your HTML defining the `appId`.
 
     <cast-video appId="{{ appId }}"></cast-video>
-    
-In the polymer ready event pass in the castManager object.
 
-    var video = document.querySelector('cast-video');
-    video.castManager = castManager;
-    
 ##Loading media
 Currently the video player only supports HTML5 video content.
  
@@ -58,11 +53,21 @@ To load media, first create a media object.
       "largeImageUrl": "//commondatastorage.googleapis.com/gtv-videos-bucket/sample/images_780x1200/BigBuckBunny-780x1200.jpg"
     };
 
-Next set the local media.
+Create a `cast.Media` object.
+    
+    var castMedia = new cast.Media(media);
+
+##Instiantiate a `CastMedia` object in the polymer ready event.
+In the polymer ready event, create the castManager object and pass it to the video element.
+
+    window.addEventListener('polymer-ready', function() {
+      var video = document.querySelector('cast-video');
+      var castManager = new cast.CastManager(castMedia);
+      video.castManager = castManager;
+    }
+
+##Updating media
+To set the video, call the `setLocalMedia` method of castManager.  The video element will 
+automatically detect the change and update the video content.
 
     castManager.setLocalMedia(new cast.Media(media));
-
-CastManager also takes media as a constructor paramameter if you wish to load media during initialization.
-
-    var castManager = new cast.CastManager(new cast.Media(media));
-
