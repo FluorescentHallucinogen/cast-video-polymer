@@ -33,7 +33,7 @@ limitations under the License.
     window.addEventListener('polymer-ready', function() {
       var video = document.querySelector('cast-video');
 
-      video.castManager = new cast.CastManager(media);
+      video.castManager = new cast.CastManager(new cast.Media(media));
     });
   </script>
   <style>
