@@ -15,6 +15,8 @@ limitations under the License.
 #cast-video-polymer
 This element represents the video player in the [castvideos-material](https://github.com/googlecast/CastVideos-material) sample.
 
+[Demo](http://googlecast.github.io/cast-video-polymer/demo.html)
+
 It observes castManager `localMedia` and automatically loads any HTML5 video that's set as localMedia.
 
 It encapsulates the [cast-player-bar](https://github.com/googlecast/cast-player-bar-polymer) element to handle controlling local media and casting.
@@ -58,9 +60,9 @@ To load media, first create a media object.
 
 Next set the local media.
 
-    castManager.setLocalMedia(media);
+    castManager.setLocalMedia(new cast.Media(media));
 
 CastManager also takes media as a constructor paramameter if you wish to load media during initialization.
 
-    var castManager = new cast.CastManager(media);
+    var castManager = new cast.CastManager(new cast.Media(media));
 
