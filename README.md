@@ -62,12 +62,11 @@ Create a `cast.Media` object.
 In the polymer ready event, create the castManager object and pass it to the video element.
 
     window.addEventListener('polymer-ready', function() {
-      var video = document.querySelector('cast-video');
-      var castManager = new cast.CastManager(castMedia);
-      video.castManager = castManager;
+      var video = document.querySelector('cast-video'); 
+      video.castManager = new cast.CastManager(castMedia);
     }
 
-##Updating media
+##Loading new media
 To set the video, call the `setLocalMedia` method of castManager.  The video element will 
 automatically detect the change and update the video content.
 
