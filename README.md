@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 #cast-video-polymer
-This element represents the video player in the [castvideos-material](https://github.com/googlecast/CastVideos-material) sample.
+This element represents the video player in the [CastVideos-chrome-material](https://github.com/googlecast/CastVideos-chrome-material) sample.
 
 [Demo](http://googlecast.github.io/cast-video-polymer/demo.html)
 
