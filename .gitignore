@@ -1,2 +1,6 @@
 .idea
 .git
+bower_components
+.bower.json
+.DS_Store
+
