@@ -19,8 +19,9 @@
     "iron-signals": "polymerElements/iron-signals#~1.0.2",
     "paper-spinner": "polymerElements/paper-spinner#~1.0.2",
     "iron-flex-layout": "polymerElements/iron-flex-layout#~1.0.3",
-    "cast-theme": "pengying/cast-theme-polymer",
+    "cast-theme-polymer": "pengying/cast-theme-polymer",
     "cast-manager-polymer": "pengying/cast-manager-polymer#~1.0.2",
-    "cast-player-bar-polymer": "googlecast/cast-player-bar-polymer"
+    "cast-player-bar-polymer": "googlecast/cast-player-bar-polymer",
+    "cast-theme-polymer": "pengying/cast-theme-polymer"
   }
 }
