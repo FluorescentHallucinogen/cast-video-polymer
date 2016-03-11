@@ -50,3 +50,6 @@ Add the element to your DOM as a child of `cast-manager` and bind the required p
                 connection-status="[[connectionStatus]]"
                 show-spinner="[[showSpinner]]"
                 cast-device-name="[[castDeviceName]]"></cast-video>
+
+## Terms
+Your use of this sample is subject to, and by using or downloading the sample files you agree to comply with, the [Google APIs Terms of Service](https://developers.google.com/terms/) and the [Google Cast SDK Additional Developer Terms of Service](https://developers.google.com/cast/docs/terms/).
